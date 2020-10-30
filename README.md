@@ -1,6 +1,6 @@
 <h1><b>ToDo-List Project</b></h1>
 
-![alt-text](link)
+![alt-text](https://github.com/StergiosHariop/Todo-List-Project/blob/master/project.gif)
 
 https://www.theodinproject.com/courses/javascript/lessons/todo-list
 
