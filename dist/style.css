@@ -1,0 +1,116 @@
+body{
+    margin:0;
+    background-image:url(bg.jpg);
+    font-family: "Montserrat", "sans-serif";
+}
+header{
+    text-align: center;
+    height: 70px;
+    background: linear-gradient(45deg, #bfc5c1, transparent);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.753), 0 1px 3px 1px rgba(60, 64, 67, 0.664);
+}
+.fa-linkedin-square, .fa-github{
+    color: white;
+    font-size: 27px;
+}
+h2,h5{
+    font-weight: bold;
+    color: white;  
+}
+.create, .button-delete, .clear-button, .create-button{
+    color: white;
+} 
+#project-container{
+    display: flex;
+    justify-content: center;
+}
+.project-wrap{
+    border-radius: 10px 10px 10px 10px;
+    margin-top:50px;
+    width: 900px;
+    height: 650px;
+    background: linear-gradient(45deg, #ac88b3, transparent);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.753), 0 1px 3px 1px rgba(60, 64, 67, 0.664);
+}
+.project-list{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: -1em;
+    margin-left: -30px;
+}
+.list{
+   overflow: hidden;
+   border: none;
+   text-indent: 10px;
+   border-radius: .25rem;
+}
+.display{
+    padding: 20px 0 0 0;
+}
+.container{
+    padding: 20px 0 0 30px;
+}
+.list-name{
+    margin-left: -8px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.list-name:hover{
+    color:#383b44;
+    transition-delay: 0.1s;
+}
+
+.task-label:hover{
+    color:#383b44;
+    transition-delay: 0.1s;
+}
+.btn-task-remove{
+    margin-top: 2px;
+    right: 25px;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    border-radius: .25rem;
+    border: 1px solid white;
+    width: 25px;
+    height: 27px;
+    border-color: white;
+    transition-delay: 0.1s;
+}
+.btn-task-remove:hover{
+    border-color:#383b44;
+    color:#383b44;
+}
+input[type=checkbox]{
+    visibility: hidden;
+}
+label {
+    color: white;
+    padding-left: 25px;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition-delay: 0.1s;
+  }
+  label:before {
+    margin-top: 2px;
+    line-height: 20px;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0px;
+    background-color: transparent;
+    border: 1px solid white
+  }
+  input[type=checkbox]:checked + label:before,
+  label:hover:before {
+    content: "\2713";
+    color: #666666;
+    text-align: center;
+    line-height: 16px;
+  }
