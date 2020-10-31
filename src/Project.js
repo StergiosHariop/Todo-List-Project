@@ -1,13 +1,13 @@
-import { project,task} from "./objectConstructors"
+import { project,task} from "./objectConstructors";
 
 export const toDoApp = () => {
 
     /* Selectors */
 
     const container = document.querySelector('[data-list]');
-    const newContainerForm = document.querySelector('[data-new-container-form]')
-    const newContainerInput = document.querySelector('[data-new-container-input]')
-    const deleteButton = document.querySelector('[data-delete-button]')
+    const newContainerForm = document.querySelector('[data-new-container-form]');
+    const newContainerInput = document.querySelector('[data-new-container-input]');
+    const deleteButton = document.querySelector('[data-delete-button]');
     const clearButton = document.querySelector('[data-clear]');
     const tasksContainer = document.querySelector('[data-tasks]');
     const newTaskForm = document.querySelector('[data-new-task-form]');
@@ -24,7 +24,7 @@ export const toDoApp = () => {
 
     container.addEventListener('click', event => {
         if(event.target.tagName.toLowerCase() === 'li'){
-            selectedProjectId = event.target.dataset.projectId
+            selectedProjectId = event.target.dataset.projectId;
             saveAndRender();
         }
     });
@@ -87,26 +87,26 @@ export const toDoApp = () => {
 
         save();
         render();
-    };
+    }
 
     function save(){
 
         localStorage.setItem(LOCAL_STORAGE_KEY,JSON.stringify(projectList));
         localStorage.setItem(LOCAL_STORAGE_PROJECT_ID_KEY, selectedProjectId);
-    };
+    }
 
     /* Rendering everything in DOM */
 
     function render(){
 
-        clearElement(container)
+        clearElement(container);
         renderList(); 
 
         const selectedProject = projectList.find(project => project.id === selectedProjectId);
         
         clearElement(tasksContainer);
         renderTasks(selectedProject);   
-    };
+    }
 
     /* Rendering tasks in the DOM */
 
@@ -147,7 +147,7 @@ export const toDoApp = () => {
             taskDiv.appendChild(taskLabel);
             taskDiv.appendChild(taskRemove);
         });
-    };
+    }
 
     /* Rendering projects in the DOM */
 
@@ -165,23 +165,23 @@ export const toDoApp = () => {
 
             if(project.id === selectedProjectId){
                 projectElement.classList.add('active-project');
-            };
+            }
             container.appendChild(projectElement);
         });
-    };
+    }
 
     /* Clear functions for DOM and Local Storage */
 
     function clearElement(element){
         while(element.firstChild){
             element.removeChild(element.firstChild);
-        };
-    };
-
+        }
+    }
+      
     function clear(){
         localStorage.clear();
         projectList = [];
-    };
+    }
 
     render();
 };
