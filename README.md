@@ -9,6 +9,7 @@ Allows user to create projects and store/delete tasks like a notebook.
 - OOP Principles 
 - Local Storage
 - Webpack 
+- Bootstrap 4 
 
 
 <h3><b>Live:</b></h3>
