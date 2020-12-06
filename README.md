@@ -3,6 +3,7 @@
 ![alt-text](https://github.com/StergiosHariop/Todo-List-Project/blob/master/project.gif)
 
 Preview:
+
 https://www.theodinproject.com/courses/javascript/lessons/todo-list
 
 Allows user to create projects and store/delete tasks like a notebook.
