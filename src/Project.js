@@ -15,7 +15,7 @@ export const toDoApp = () => {
     const LOCAL_STORAGE_KEY = 'task.projects';
     const LOCAL_STORAGE_PROJECT_ID_KEY = 'task.projectsSelectedId';
 
-    /* Array and Local Storage viriables */
+    /* Array and Local Storage variables */
 
     let projectList = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || [];
     let selectedProjectId = localStorage.getItem(LOCAL_STORAGE_PROJECT_ID_KEY);
